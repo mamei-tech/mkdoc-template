@@ -39,7 +39,7 @@ markdown_extensions:
 
 plugins:
   - search:
-      lang: es                                      # Set language for search
+      lang: en                                      # Set language for search
   - minify:
       minify_html: true
       minify_js: true
