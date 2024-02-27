@@ -1,0 +1,49 @@
+site_name: ProjectName documentation
+site_description: Documentation of the ProjectName application.
+site_author: mamei development group
+
+docs_dir: '../../docs/en'                           # Where to find the Spanish markdown files
+site_dir: '../../generated/en'                      # Where to put the Spanish HTML files
+
+repo_url: https://github.com/mamei-tech/reponame/
+
+theme:
+  name: material
+  custom_dir: '../../overrides/'
+  logo: assets/images/ico-signal.ico
+  favicon: assets/images/ico-signal.ico
+  language: es
+
+extra_css:
+  - assets/stylesheets/yesplan.css                  # CSS is shared by all languages
+
+extra:
+  alternate:
+    # Switch to English
+    - name: English
+      link: /doc_folder_name/en/
+      lang: en
+
+    # Switch to Spanish
+    - name: Español
+      link: /doc_folder_name/es/
+      lang: es
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search:
+      lang: en                                      # Set language for search
+
+nav:
+  - Home: index.md
+  - Glossary: glossary.md
+  - ¿About us?: about.md
+
+
